@@ -12,15 +12,13 @@ Webpack with WebpackDevServer, Bootstrap, Sass, Stylelint & Babel
 * [Bootstrap 4](https://getbootstrap.com/)
 * [Babel](https://babeljs.io/)
 
-## Requirenments 
-
-* [Yarn](https://yarnpkg.com/lang/en/)
-
 ## Installation
 
-mkdir webpack-bootstrap && cd webpack-bootstrap
-
-git clone git@github.com:zelmandesign/webpack-onepager.git 
+```shell
+$ git clone git@github.com:zelmandesign/webpack-bootstrap.git
+$ cd webpack-bootstrap
+$ yarn 
+```
 
 ## Development
 
