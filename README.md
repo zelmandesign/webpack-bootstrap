@@ -14,8 +14,11 @@ Webpack with WebpackDevServer, Bootstrap, Sass, Stylelint & Babel
 
 ## Installation
 
-`$ git clone git@github.com:zelmandesign/webpack-bootstrap.git`
-`$ cd webpack-bootstrap`
+```shell
+$ git clone git@github.com:zelmandesign/webpack-bootstrap.git
+$ cd webpack-bootstrap
+```
+
 Run `$ yarn` from the directory to install dependencies
 
 ## Development
