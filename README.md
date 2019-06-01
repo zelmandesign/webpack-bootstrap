@@ -19,7 +19,7 @@ $ git clone git@github.com:zelmandesign/webpack-bootstrap.git
 $ cd webpack-bootstrap
 ```
 
-Run `$ yarn` from the directory to install dependencies
+Run `yarn` from `webpack-bootstrap` directory to install dependencies
 
 ## Development
 
