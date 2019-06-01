@@ -1,0 +1,43 @@
+header {
+  a {
+    color: $text;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  .container {
+    max-width: 1630px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      margin-top: 25px;
+    }
+  }
+
+  .navbar {
+    padding-top: 38px;
+    padding-bottom: 30px;
+
+    .navbar-brand {
+      padding: 0;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-right: 45px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .nav-link {
+        padding: 0.5rem 0;
+        color: $text;
+      }
+    }
+  }
+}

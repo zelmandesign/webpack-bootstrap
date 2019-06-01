@@ -1,0 +1,22 @@
+FONT: LATO
+
+Rozmiary:
+h1: 40px Regular
+h2: 40px Regular
+h3: 20px Regular  letter spacing 2px
+h4: 17px Bold  letter spacing 5px
+Text 18px
+Input:  17px Light
+Checkboxy: 14px
+Liczby: 150px Black
+
+Kolory:
+Font color: #000000
+Grey BG: #F8F8F8
+Black BG: #1F2022
+
+Przciski
+Cieñ: 0 5 20 - #000 10%
+Zaokr¹glenie: 10px
+font-size: 17px
+letter spacing 2px
