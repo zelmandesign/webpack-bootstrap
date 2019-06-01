@@ -1,17 +1,21 @@
 {
-  "name": "adcookie",
-  "version": "1.0.0",
+  "name": "webpack-bootstrap",
+  "version": "1.0",
+  "description": "Webpack with WebpackDevServer, Bootstrap, Sass, Stylelint & Babel",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server"
-  },
+  "repository": "https://github.com/zelmandesign/webpack-bootstrap",
+  "author": "Andrzej Zelman",
+  "homepage": "http://www.zelmandesign.com/",
   "licenses": [
     {
       "type": "MIT",
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
