@@ -22,10 +22,9 @@ $ yarn
 
 ## Development
 
-run 'yarn start' for development 
-
-run 'yarn build' for production
+* `yarn start` — Compile assets when file changes are made, start WebpackDevServer
+* `yarn build` — Compile the files
 
 ## Production
 
-./dist folder contains compiled assets# webpack-bootstrap
+`dist` folder contains compiled assets
