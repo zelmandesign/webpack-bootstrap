@@ -30,5 +30,5 @@ Run `yarn` from `webpack-bootstrap` directory to install dependencies
 
 ## Production
 
-* `yarn build:production` - Compile assets for production. Optimize images, minifies code. 
+* `yarn build:production` - Compile assets for production. Optimize images, minify HTML/CSS/JS code. 
 * `/dist` folder contains compiled assets
