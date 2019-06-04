@@ -1,9 +1,12 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const common = require("./webpack.common")
+const merge = require("webpack-merge")
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
+module.exports = merge(common, {
+  mode: 'development',
   output: {
     filename: '[name].js',
     path: __dirname + '/dist'
@@ -25,31 +28,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader?name=img/[hash].[ext]'
-        ]
-      },
-      {
         test: /\.scss$/,
         use: [{
-          loader: 'style-loader', // inject CSS to page
+          loader: MiniCssExtractPlugin.loader,
         }, {
           loader: 'css-loader', // translates CSS into CommonJS modules
         }, {
@@ -64,17 +45,25 @@ module.exports = {
         }, {
           loader: 'sass-loader' // compiles Sass to CSS
         }]
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "img"
+          }
+        }
+      },
     ]
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+  plugins: [     
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: "[name].css"
     }),
     new StyleLintPlugin({
       syntax: 'scss',
@@ -107,4 +96,4 @@ module.exports = {
     noInfo: true,
     stats: 'errors-only'
   }
-}
+});

@@ -6,6 +6,8 @@ Webpack with WebpackDevServer, Bootstrap, Sass, Stylelint & Babel
 
 * Sass for stylesheets
 * Modern JavaScript
+* Image optimization
+* JS & CSS code minifier
 * [Webpack](https://webpack.github.io/) for compiling assets
 * [WebpackDevServer](https://github.com/webpack/webpack-dev-server)
 * [Stylelint](https://github.com/stylelint/stylelint)
@@ -24,8 +26,9 @@ Run `yarn` from `webpack-bootstrap` directory to install dependencies
 ## Development
 
 * `yarn start` — Compile assets when file changes are made, start WebpackDevServer
-* `yarn build` — Compile assets for production
+* `yarn build` — Compile assets
 
 ## Production
 
+* `yarn build:production` - Compile assets for production. Optimize images, minifies code. 
 * `/dist` folder contains compiled assets
